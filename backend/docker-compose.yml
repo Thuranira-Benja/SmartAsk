@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  backend:
+    build: .
+    ports:
+      - '8000:8000'
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - CHROMA_PERSIST_DIR=/data/chroma
+    volumes:
+      - ./app:/app/app
+      - chroma_data:/data/chroma
+
+volumes:
+  chroma_data:

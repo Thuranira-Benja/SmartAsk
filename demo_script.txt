@@ -1,0 +1,19 @@
+SmartAsk Demo Script for Arc Communication Test and Interview
+
+1. Quick intro (20-30s):
+   - "Hi, I'm Benjamin Thuranira, a Django and full-stack developer from Meru, Kenya. I built SmartAsk, an AI-powered chat assistant that answers document and bureaucratic queries using RAG (Retrieval-Augmented Generation)."
+
+2. What SmartAsk does (30s):
+   - Explain Phase 1 (hard-coded Q&A flows) and Phase 2 (RAG with document retrieval).
+   - Mention tech stack: FastAPI, React (Vite+Tailwind), OpenAI, Chroma (vector store).
+
+3. Tech walkthrough (60s):
+   - Backend endpoints: `/api/chat`
+   - How RAG works: document chunking -> embeddings -> vector DB -> retrieve -> LLM generates grounded answer.
+   - Show a live query example: ask a question present in demo docs and show the response.
+
+4. Why it's useful (20s):
+   - Reduces time for users to find answers in policies/forms and reduces human workload.
+
+5. Closing (10s):
+   - Invite the interviewer to ask technical or deployment questions and mention the repo is ready on GitHub.
